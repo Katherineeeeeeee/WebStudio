@@ -1,0 +1,36 @@
+.feature {
+    padding-bottom: 47px;
+}
+
+.feature-list {
+    --items: 4;
+}
+
+  /* icons-features */
+
+.feature-list__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    height: 120px;
+
+    background-color: #f5f4fa;
+}
+
+.feature-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-text-colour);
+}
+
+.feature-list__text {
+    font-size: 14px;
+    line-height: 1.7;
+}

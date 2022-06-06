@@ -1,0 +1,33 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus{
+        color: var(--accent-colour);
+    border-color: var(--accent-colour);
+    background-color: var(--primary-white-colour);
+    }
+}
+
+
+.clients-list__icon {
+    fill: currentColor;
+}
