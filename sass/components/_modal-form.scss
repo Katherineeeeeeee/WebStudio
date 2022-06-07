@@ -28,8 +28,10 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    min-height: 518px;
+
+    width: 100%;
+    max-width: 450px;
+    max-height: 609px;
 
     padding: 40px;
     top: 50%;
@@ -40,6 +42,11 @@
     background-color: var(--primary-white-colour);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 528px;
+    // }
+
 }
 
 .modal__close-btn {
@@ -89,7 +96,16 @@ color: var(--title-text-colour);
 }
 
 .modal-form {
-color: var(--primary-text-colour);
+    // width: 370px;
+display: flex;
+flex-direction: column;
+
+    color: var(--primary-text-colour);
+
+//     @media screen and (min-width: 1200px) {
+//     max-width: 448px;
+// }
+
 }
 
 .modal-form__label {

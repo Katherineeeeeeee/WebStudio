@@ -58,8 +58,16 @@
             >
           </li>
         </ul>
+
+<button class="menu-btn" data-menu-button>
+  <svg class="menu-btn__icon" width="40" height="40">
+    <use class="menu-btn__icon-burger" href="./images/icons/sprite.svg#burger"></use>
+  </svg>
+</button>
+
+
       </div>
-    </header>
+    </header> 
 
     <main>
       <!--Блок герой-->
@@ -71,7 +79,7 @@
       </section>
 
       <!--Особености-->
-      <section class="section feature">
+      <!-- <section class="section feature">
         <div class="container">
           <h2 class="section-title visually-hidden">Особенности</h2>
           <ul class="feature-list card-set list">
@@ -124,10 +132,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Чем занимаются-->
-      <section class="section works">
+      <!-- <section class="section works">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="works-list card-set list">
@@ -165,16 +173,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-         
+      
           <ul class="team-list card-set list">
             <li class="team-list__item card-set__item">
-              <img src="./images/img-one.jpg" alt="Дизайнер" width="270" />
+              <img class="team-list__team-img" src="./images/img-one.jpg" alt="Дизайнер" width="270" />
               
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Игорь Демьяненко</h3>
@@ -217,7 +225,7 @@
             </li>
 
             <li class="team-list__item card-set__item">
-              <img src="./images/img-two.jpg" alt="Фронтенд разработчик" width="270" />
+              <img class="team-list__team-img" src="./images/img-two.jpg" alt="Фронтенд разработчик" width="270" />
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Ольга Репина</h3>
                 <p class="team-list__team-position">Frontend Developer</p>
@@ -255,7 +263,7 @@
             </li>
 
             <li class="team-list__item card-set__item">
-              <img src="./images/img-three.jpg" alt="Маркетолог" width="270" />
+              <img class="team-list__team-img" src="./images/img-three.jpg" alt="Маркетолог" width="270" />
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Николай Тарасов</h3>
                 <p class="team-list__team-position">Marketing</p>
@@ -293,7 +301,7 @@
             </li>
 
             <li class="team-list__item card-set__item">
-              <img src="./images/img-four.jpg" alt="Дизайнер" width="270" />
+              <img class="team-list__team-img" src="./images/img-four.jpg" alt="Дизайнер" width="270" />
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Михаил Ермаков</h3>
                 <p class="team-list__team-position">UI Designer</p>
@@ -331,15 +339,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные клиенты -->
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
 
-          <ul class="clients-list list">
-            <li class="clients-list__item">
+          <ul class="clients-list card-set list">
+            <li class="clients-list__item card-set__item">
 
               <a class="clients-list__link" href="">
 
@@ -349,7 +357,7 @@
               </a>
             </li>
 
-            <li class="clients-list__item">
+            <li class="clients-list__item card-set__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
                   <use href="./images/icons/sprite.svg#logo-2"></use>
@@ -357,7 +365,7 @@
               </a>
             </li>
 
-            <li class="clients-list__item">
+            <li class="clients-list__item card-set__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
                   <use href="./images/icons/sprite.svg#logo-3"></use>
@@ -365,7 +373,7 @@
               </a>
             </li>
 
-            <li class="clients-list__item">
+            <li class="clients-list__item card-set__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
                   <use href="./images/icons/sprite.svg#logo-4"></use>
@@ -373,7 +381,7 @@
               </a>
             </li>
 
-            <li class="clients-list__item">
+            <li class="clients-list__item card-set__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
                   <use href="./images/icons/sprite.svg#logo-5"></use>
@@ -381,7 +389,7 @@
               </a>
             </li>
 
-            <li class="clients-list__item">
+            <li class="clients-list__item card-set__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
                   <use href="./images/icons/sprite.svg#logo-6"></use>
@@ -390,13 +398,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
-        <div class="">
+        <div class="footer__one">
           <a class="logo" href="./index.html">Web<span class="logo__light">Studio</span></a>
          
           <address class="footer__address">
@@ -463,19 +471,20 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal form -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-close>
           <svg class="modal__close-icon" width="11" height="11">
             <use href="./images/icons/sprite.svg#close-icon"></use>
           </svg>
-        </button>
+        </button> -->
 
         <!-- Form -->
-        <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+
+        <!-- <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
 
         <form class="modal-form">
           <label class="modal-form__label">
@@ -539,7 +548,37 @@
           <button class="button main-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
+
+    <!-- Mobile-menu -->
+    <div class="mobile-menu" data-menu></div>
+    <button class="menu-btn" data-menu-button>
+      <svg class="mobile-menu-btn__icon" width="24" height="24">
+        <use class="menu-btn__icon-close" href="./images/icons/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__nav">
+      <li><a href="" >Студия</a></li>
+      <li><a href="">Портфолио</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+      
+  <ul class="mobile-menu__contacts">
+    <li><a href="">+38 096 111 11 11</a></li>
+    <li><a href="">info@devstudio.com</a> </li>
+  </ul>
+
+  <ul class="mobile-menu__socials">
+    <li><a href="">Instagram</a></li>
+    <li><a href="">Twitter</a></li>
+    <li><a href="">Facebook</a></li>
+    <li><a href="">LinkedIn</a></li>
+  </ul>
+
+    
+
+
 
     <script src="./js/modal.js"></script>
   </body>
