@@ -64,9 +64,11 @@
 
         <button class="menu-btn" data-menu-button>
           <svg class="menu-btn__icon" width="40" height="40">
-            <use class="menu-btn__icon-burger" href="./images/icons/sprite.svg#burger"></use>
+            <use class="menu-btn__icon-burger--open" href="./images/icons/sprite.svg#burger"></use>
+            <use class="menu-btn__icon-burger--close" href="./images/icons/sprite.svg#mob-close-icon"></use>
           </svg>
         </button>
+
       </div>
     </header>
 
@@ -647,6 +649,7 @@
                 class="modal-form__agreement-checkbox"
                 role="checkbox"
                 aria-labelledby="user-checkbox"
+                aria-checked=""
                 tabindex="0"
               >
                 <svg class="modal-checkbox-icon" width="16" height="15">
@@ -655,8 +658,7 @@
               </span>
 
               <span class="modal-form__agreement-txt">
-                Соглашаюсь с рассылкой и принимаю&nbsp;
-                <a class="modal-form__agreement-link" href="">Условия договора</a></span
+                Соглашаюсь с рассылкой и принимаю&nbsp<a class="modal-form__agreement-link" href="">Условия договора</a></span
               >
             </label>
           </div>
@@ -667,11 +669,7 @@
 
     <!-- Mobile-menu -->
     <div class="mobile-menu" data-menu>
-      <button class="menu-btn" data-menu-button>
-        <svg class="mobile-menu-btn__icon" width="24" height="24">
-          <use class="menu-btn__icon-close" href="./images/icons/sprite.svg#close-icon"></use>
-        </svg>
-      </button>
+    
       <ul class="mobile-menu__nav list">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link mobile-menu__link--current" href="">Студия</a>
