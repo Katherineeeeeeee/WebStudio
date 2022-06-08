@@ -31,7 +31,6 @@
 
     width: 100%;
     max-width: 450px;
-    max-height: 609px;
 
     padding: 40px;
     top: 50%;
@@ -43,9 +42,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    // @media screen and (min-width: 1200px) {
-    //     width: 528px;
-    // }
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+    }
 
 }
 
@@ -96,15 +95,10 @@ color: var(--title-text-colour);
 }
 
 .modal-form {
-    // width: 370px;
 display: flex;
 flex-direction: column;
 
-    color: var(--primary-text-colour);
-
-//     @media screen and (min-width: 1200px) {
-//     max-width: 448px;
-// }
+color: var(--primary-text-colour);
 
 }
 
@@ -218,11 +212,16 @@ background-color: var(--accent-colour);
 
 
 .modal-form__agreement-txt {
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.17;
 letter-spacing: 0.03em;
 
 color: var(--primary-text-colour);
+
+@media screen and(min-width:1200px){
+    font-size: 14px;
+    line-height: 1.71;
+}
 }
 
 .modal-form__agreement-link {

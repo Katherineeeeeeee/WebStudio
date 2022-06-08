@@ -1,23 +1,17 @@
 .header {
     border-bottom: 1px solid #eeeeee;
+
+    @media screen and(max-width:767px){
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
 }
 
 .header__container {
     display: flex;
     align-items: center;
     
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    @media screen and (min-width:480px) and (max-width:767px) {
-        justify-content: space-between;
-        width: 450px;
-    }
-    @media screen and (min-width:768px) {
-        width: 768px;
-    }
-
     @media screen and (min-width:1200px) {
         width: 1200px;
     }
@@ -27,7 +21,6 @@
     display: flex;
     align-items: center;
     
-
     @media screen and (min-width:767.98px) {
         margin-right: 88px;
     }
@@ -54,7 +47,7 @@ margin-right: 50px;
 }
 
 .site-nav__link {
-// display: block;
+    display: block;
 padding-top: 32px;
 padding-bottom: 32px;
 
