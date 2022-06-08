@@ -26,6 +26,10 @@
   margin-bottom: 60px;
   text-align: center;
 
+  @media screen and (min-width:768px) and (max-width:1199px){
+    margin-right: 165px;
+  }
+
   @media screen and(min-width:1200px) {
     text-align: left;
     margin-bottom: 0;
@@ -91,7 +95,7 @@
   color: var(--primary-white-colour);
 
   @media screen and(min-width:1200px) {
-    margin-right: 20px;
+    margin-right: 40px;
   }
 }
 
