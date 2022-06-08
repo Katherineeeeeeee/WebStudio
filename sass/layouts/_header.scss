@@ -116,10 +116,14 @@ position: relative;
     }
 }
 
-.contacts-nav__item:not(:last-child) {
-    margin-bottom: 10px;
 
+
+.contacts-nav__item:not(:last-child) {
+    @media screen and (min-width:768px) and (max-width:1199px){
+        margin-bottom: 10px;
+    }
 }
+
 
 .contacts-nav__link {
 display: flex;
