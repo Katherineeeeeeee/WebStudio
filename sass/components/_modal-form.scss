@@ -29,23 +29,26 @@
 
 .modal {
     position: absolute;
-
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-
-    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: 320px;
+    // height: 581px;
+    padding: 30px;
 
     border-radius: 4px;
     background-color: var(--primary-white-colour);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
+    @media screen and (min-width: 480px) {
+    padding: 40px;
+    width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
-        min-width: 528px;
+        width: 528px;
     }
 
 }
@@ -77,6 +80,8 @@
 }
 
 
+
+
 .modal__close-icon {
     fill: currentColor;
 }
@@ -92,6 +97,7 @@ margin-bottom: 12px;
 font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
+
 
 color: var(--title-text-colour);
 }
@@ -114,6 +120,16 @@ margin-bottom: 10px;
 .modal-form__label:last-of-type {
 margin-bottom: 20px;
 }
+
+.modal-form__title{
+    margin-bottom: 4px;
+font-size: 12px;
+line-height: 1.17px;
+letter-spacing: 0.01em;
+
+color: var(--primary-text-colour);
+}
+
 
 .modal-form__input {
 width: 100%;
