@@ -142,21 +142,45 @@
           <ul class="works-list card-set list">
             <li class="works-list__item card-set__item">
               <div class="works-list__works-wrapper">
-                <img src="./images/picture-one.jpg" alt="Верстка" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works/img_1.jpg 1x, ./images/works/img_1@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/works/img_1.jpg" alt="Верстка" width="370" />
+                </picture>
                 <p class="works-list__desc">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="works-list__item card-set__item">
               <div class="works-list__works-wrapper">
-                <img src="./images/picture-two.jpg" alt="Дизайн" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works/img_2.jpg 1x, ./images/works/img_2@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/works/img_2.jpg" alt="Дизайн" width="370" />
+                </picture>
+
                 <p class="works-list__desc">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="works-list__item card-set__item">
               <div class="works-list__works-wrapper">
-                <img src="./images/picture-three.jpg" alt="Внешнее оформление" width="370" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/works/img_3.jpg 1x, ./images/works/img_3@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <img src="./images/works/img_3.jpg" alt="Внешнее оформление" width="370" />
+                </picture>
+
                 <p class="works-list__desc">Дизайнерские решения</p>
               </div>
             </li>
@@ -171,12 +195,34 @@
 
           <ul class="team-list card-set list">
             <li class="team-list__item card-set__item">
-              <img
+
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/one_l.jpg 1x, ./images/team/one_l@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/one_m.jpg 1x, ./images/team/one_m@2x.jpg 2x"
+                type="image/jpg"
+              />
+
+              <source
+                  media="(max-width: 480px)"
+                  srcset="./images/team/one_s.jpg 1x, ./images/team/one_s@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
                 class="team-list__team-img"
-                src="./images/img-one.jpg"
+                src="./images/team/one_s.jpg"
                 alt="Дизайнер"
                 width="270"
               />
+              </picture>
+
 
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Игорь Демьяненко</h3>
@@ -216,12 +262,32 @@
             </li>
 
             <li class="team-list__item card-set__item">
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/two_l.jpg 1x, ./images/team/two_l@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/two_m.jpg 1x, ./images/team/two_m@2x.jpg 2x"
+                type="image/jpg"
+              />
+
+              <source
+                  media="(max-width: 480px)"
+                  srcset="./images/team/two_s.jpg 1x, ./images/team/two_s@2x.jpg 2x"
+                  type="image/jpg"
+                />
               <img
                 class="team-list__team-img"
-                src="./images/img-two.jpg"
+                src="./images/team/two_s.jpg"
                 alt="Фронтенд разработчик"
                 width="270"
               />
+</picture>
+
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Ольга Репина</h3>
                 <p class="team-list__team-position">Frontend Developer</p>
@@ -259,12 +325,34 @@
             </li>
 
             <li class="team-list__item card-set__item">
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/three_l.jpg 1x, ./images/team/three_l@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/three_m.jpg 1x, ./images/team/three_m@2x.jpg 2x"
+                type="image/jpg"
+              />
+
+              <source
+                  media="(max-width: 480px)"
+                  srcset="./images/team/three_s.jpg 1x, ./images/team/three_s@2x.jpg 2x"
+                  type="image/jpg"
+                />
               <img
                 class="team-list__team-img"
-                src="./images/img-three.jpg"
+                src="./images/team/three_s.jpg"
                 alt="Маркетолог"
                 width="270"
               />
+
+              </picture>
+
+
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Николай Тарасов</h3>
                 <p class="team-list__team-position">Marketing</p>
@@ -302,12 +390,32 @@
             </li>
 
             <li class="team-list__item card-set__item">
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/four_l.jpg 1x, ./images/team/four_l@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/four_m.jpg 1x, ./images/team/four_m@2x.jpg 2x"
+                type="image/jpg"
+              />
+
+              <source
+                  media="(max-width: 480px)"
+                  srcset="./images/team/four_s.jpg 1x, ./images/team/four_s@2x.jpg 2x"
+                  type="image/jpg"
+                />
               <img
                 class="team-list__team-img"
-                src="./images/img-four.jpg"
+                src="./images/team/four_s.jpg"
                 alt="Дизайнер"
                 width="270"
               />
+              </picture>
+
               <div class="team-list__team-desc">
                 <h3 class="team-list__team-name">Михаил Ермаков</h3>
                 <p class="team-list__team-position">UI Designer</p>

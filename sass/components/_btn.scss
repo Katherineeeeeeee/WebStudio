@@ -52,6 +52,10 @@
 .filter-list__item {
     margin-top: 0;
     margin-right: 8px;
+
+    @media screen and(min-width:320px) and (max-width:767px) {
+    margin-bottom: 8px;
+    }
 }
 
 .filter-list__item:last-child {

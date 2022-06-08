@@ -1,49 +1,61 @@
 .hero {
-    margin: 0 auto;
-    padding: 118px 0px;
+  margin: 0 auto;
+  padding: 118px 0px;
+  max-width: 1600px;
+  text-align: center;
 
-    max-width: 1600px;
+  @media screen and(min-width: 1200px) {
+    padding: 200px 0;
+  }
 
-    text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/bg_s.jpg');
 
-    
-    // @media screen and(min-width: 768px){
-    //     width: 768px;
-    //     height: 400px;
-    // }
+  background-position: center;
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    @media screen and(min-width: 1200px){
-        padding: 200px 0;
-    }
-
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.png);
+      url('../images/hero/bg_s@2x.jpg');
+  }
 
-    background-position: center;
-    background-color: #2f303a;
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/bg_m.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/bg_m@2x.jpg');
+    }
+  }
 
+  @media (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/bg_l.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/bg_l@2x.jpg');
+    }
+  }
 }
 
 .hero__title {
-    max-width: 360px;
-    margin: auto;
-    margin-bottom: 30px;
+  max-width: 360px;
+  margin: auto;
+  margin-bottom: 30px;
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    color: var(--primary-white-colour);
+  color: var(--primary-white-colour);
 
-
-
-    @media screen and(min-width: 1200px){
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 1.36
-    }
+  @media screen and(min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
