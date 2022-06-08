@@ -55,8 +55,10 @@
 
 .modal__close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 0;
+    right: 0;
+
+    margin: 8px 8px;
 
     display: flex;
     align-items: center;
@@ -96,8 +98,6 @@ margin-bottom: 12px;
 
 font-weight: 700;
 font-size: 20px;
-line-height: 1.15;
-
 
 color: var(--title-text-colour);
 }
@@ -112,8 +112,9 @@ color: var(--primary-text-colour);
 
 .modal-form__label {
 position: relative;
+display: flex;
+flex-direction: column;
 
-display: block;
 margin-bottom: 10px;
 }
 
@@ -122,7 +123,7 @@ margin-bottom: 20px;
 }
 
 .modal-form__title{
-    margin-bottom: 4px;
+margin-bottom: 4px;
 font-size: 12px;
 line-height: 1.17px;
 letter-spacing: 0.01em;
@@ -133,9 +134,14 @@ color: var(--primary-text-colour);
 
 .modal-form__input {
 width: 100%;
+
 margin-top: 4px;
-padding: 11px;
-padding-left: 42px;
+
+padding: 12px 20px 12px 40px;
+// padding: 11px;
+// padding-left: 42px;
+
+
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -200,6 +206,7 @@ margin-bottom: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 
 .modal-form__agreement-checkbox {
